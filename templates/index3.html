@@ -1,0 +1,50 @@
+<html>
+<p class="question"> 4. which operating systems is developed by Apple  ? </p>
+<ul class="answers">
+
+<input id="q1a" name="q1" type="radio" value="a" /> <label> A) Linux </label> <br>
+<input id="q1b" name="q1" type="radio" value="b" /> <label> B) IOS </label> <br>
+<input id="q1c" name="q1" type="radio" value="c" /> <label> C) Windows </label> <br>
+<input id="q1d" name="q1" type="radio" value="d" /> <label> D) Android </label> <br>
+
+</ul>
+
+<style>
+#q1more {display: none;}
+</style>
+
+
+
+<span id="q1dots"></span>
+<span id="q1more">
+ANSWER = IOS   <br>
+
+  </span>
+  <br>
+
+<button id="q1mybtn" onclick="q1function()">Check Answer </button>
+
+
+<script>
+function q1function() {
+var q1dots = document.getElementById("q1dots");
+var q1moreText = document.getElementById("q1more");
+var q1btnText = document.getElementById("q1mybtn");
+
+if (q1dots.style.display === "none") {
+q1dots.style.display = "inline";
+q1btnText.innerHTML = "Check Answer";
+q1moreText.style.display = "none";
+}
+else {
+q1dots.style.display = "none";
+q1btnText.innerHTML = "Hide Answer";
+q1moreText.style.display = "inline";
+}
+}
+</script>
+<form action="/index4" method='get'>
+    <br>
+<button type="submit">Next question </button>
+</form>
+</html>

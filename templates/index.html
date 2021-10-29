@@ -1,0 +1,56 @@
+<html>
+
+<h1>welcome to quiz game </h1>
+<p class="question"> 1. Who is the best cricketer in the world ? </p>
+<ul class="answers">
+
+<input id="q1a" name="q1" type="radio" value="a" /> <label> A) Sachin Tendulkar </label> <br>
+<input id="q1b" name="q1" type="radio" value="b" /> <label> B) Virat Kohli </label> <br>
+<input id="q1c" name="q1" type="radio" value="c" /> <label> C) Adam Gilchirst </label> <br>
+<input id="q1d" name="q1" type="radio" value="d" /> <label> D) Jacques Kallis </label> <br>
+
+</ul>
+
+<style>
+#q1more {display: none;}
+</style>
+
+
+
+<span id="q1dots"></span>
+<span id="q1more">
+ANSWER = (A) Sachin Tendulkar  <br>
+
+  </span>
+  <br>
+
+<button id="q1mybtn" onclick="q1function()">Check Answer </button>
+
+<script>
+function q1function() {
+var q1dots = document.getElementById("q1dots");
+var q1moreText = document.getElementById("q1more");
+var q1btnText = document.getElementById("q1mybtn");
+
+if (q1dots.style.display === "none") {
+q1dots.style.display = "inline";
+q1btnText.innerHTML = "Check Answer";
+q1moreText.style.display = "none";
+}
+else {
+q1dots.style.display = "none";
+q1btnText.innerHTML = "Hide Answer";
+q1moreText.style.display = "inline";
+}
+}
+</script>
+<form action="/index1" method='get'>
+<br>
+<button type="submit">Next question </button>
+
+</form>
+</html>
+
+
+
+
